@@ -6,8 +6,11 @@
 	<meta description="The Habermen sacrifice themselves so you can escape the Pain of Space.">
 	<link href='http://fonts.googleapis.com/css?family=Share:700' rel='stylesheet' type='text/css'>
 	<style>
-		body {
+body {
 			background: black;
+			background-image: url("https://photojournal.jpl.nasa.gov/jpeg/PIA09361.jpg");
+			background-size: cover;
+			background-position: center;
 			font-family: 'Helvetica Neue', helvetica, arial, sans-serif;
 			margin: 0;
 			padding: 0;
@@ -15,11 +18,11 @@
 		}
 
 		div#content {
-			height: 95vh;
+			height: 100vh;
 			margin-left: auto;
 			margin-right: auto;
 			font-size: 5em;
-			color: white;
+			color: whitesmoke;
 			font-family: 'Share', 'Helvetica Neue', helvetica, arial, sans-serif;
 			font-weight: 700;
       		display: flex;
@@ -29,17 +32,21 @@
 
 		div#footer {
 			width: 100%;
+			z-index: 1;
 			position: absolute;
 			bottom: 0px;
 			font-size: .75em;
-			background: gray;
+			background: whitesmoke;
 			color: black;
-			height: 5vh;
+			min-height: 3em;
 		}
 
 		@media screen and (max-width: 1024px) {
 			div#content {
 				font-size: 3em;
+			}
+			div#footer {
+				max-height: 4em;
 			}
 		}
 	</style>
@@ -48,7 +55,7 @@
 	<body>
 	<div id="content">No Ships Go!</div>
 	<div id="footer">
-	<p>The Habermen are Cordwainer Smith's creation. <a href="http://en.wikipedia.org/wiki/Scanners_Live_in_Vain">Scanners live in vain</a>.</p>
+	<p>The Habermen are Cordwainer Smith's creation. <a href="http://en.wikipedia.org/wiki/Scanners_Live_in_Vain">Scanners live in vain</a>. Photo credit: <a href="https://photojournal.jpl.nasa.gov/catalog/PIA09361">NASA/JHAPL/SWI</a></p>
 	</div>
 	</body>
 </html>
